@@ -1,0 +1,64 @@
+/* src/styles/components/Navigation.css */
+
+/* Navigation Styles */
+.nav-menu-container {
+  position: sticky;
+  top: 120px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  z-index: 99;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  padding: 10px 0;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 0;
+  gap: 15px;
+  justify-content: center;
+}
+
+.nav-item {
+  padding: 15px 10px;
+  background-color: transparent;
+  color: #22357f;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-item i {
+  font-size: 1.4em;
+  margin-bottom: 8px;
+}
+
+.nav-item:hover {
+  color: white;
+  background: linear-gradient(45deg, #36429b, #4a56af);
+  transform: translateY(-3px);
+  box-shadow: 0 7px 15px rgba(54, 66, 155, 0.3);
+}
+
+.nav-item.active {
+  background: linear-gradient(45deg, #36429b, #4a56af);
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 10px 20px rgba(54, 66, 155, 0.4);
+  transform: translateY(-3px);
+}

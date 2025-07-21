@@ -1,0 +1,41 @@
+/* src/styles/components/Home.css */
+
+/* Hide loading messages EVERYWHERE */
+.media-info {
+  display: none !important;
+}
+
+.vr-loading {
+  display: none !important;
+}
+
+#loading-message {
+  display: none !important;
+}
+
+.loading-spinner-container {
+  display: none !important;
+}
+
+/* Home page specific styles */
+.home-page {
+  display: block;
+  position: relative;
+  width: 100%;
+  background: linear-gradient(rgba(5, 10, 35, 0.7), rgba(5, 10, 35, 0.7)), 
+            url('https://res.cloudinary.com/dugxrvrs5/image/upload/v1743753190/20250404_131710_587_formphotoeditor.com_wjfmhk.jpg') center/cover fixed no-repeat;
+  overflow-y: auto;
+  z-index: 1000;
+  min-height: 100vh;
+  opacity: 1;
+  transition: opacity 0.8s ease;
+}
+
+.home-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
